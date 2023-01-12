@@ -1,0 +1,18 @@
+#!/bin/bash
+#this program will move all junk files in the present working directory to the Old-Scraps directory
+#find the files
+echo "Finding old junk files..."
+sleep 3
+for files in $(ls | sort) ; do
+	if [ -f $files ]
+	then
+		echo "$files is a file."
+		mkdir ~/Old-Scraps	
+		mv $files ~/Old-Scraps
+	fi
+#finish
+done
+sleep 3
+echo "Moving files to Old-Scraps directory..."
+sleep 3
+echo "Done!"
