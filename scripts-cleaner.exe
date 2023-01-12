@@ -1,0 +1,10 @@
+#!/bin/bash
+#this program will move all junk files in the present working directory to the Old-Scraps directory
+#find the files
+echo "Let's clean up this workspace..."
+sleep 3
+mkdir -v ./Old-Scraps
+sleep 3
+mv -v *.sh ./Old-Scraps
+sleep 3
+echo "Done!"
